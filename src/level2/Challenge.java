@@ -5,6 +5,8 @@ import processing.core.PApplet;
 
 public class Challenge extends Head {
 	Roomba roomba;
+	
+	static int speed = 500;
 
 	public static void main(String[] args) {
 		PApplet.main("level2.Processing");
@@ -17,9 +19,22 @@ public class Challenge extends Head {
 
 	public void initialize() {
 
-	}
+	goStraight(3000);
+	
+}
+
+
+	
 
 	public void loop() {
 	
 	}
-}
+	private void goStraight(int howlong){
+		driveDirect(speed,speed);
+		sleep(howlong);
+		
+		
+	}
+	
+	}
+                                
